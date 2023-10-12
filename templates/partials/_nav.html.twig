@@ -1,0 +1,49 @@
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="{{ path('home') }}">ActuNews - Premier sur l'info !</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ path('home') }}">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ path('default_category',{'slug':'politique'}) }}">
+                            Politique
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ path('default_category',{'slug':'economie'}) }}">
+                            Economie
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ path('default_category',{'slug':'culture'}) }}">
+                            Culture
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ path('default_category',{'slug':'loisirs'}) }}">
+                            Loisirs
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ path('default_category',{'slug':'sport'}) }}">
+                            Sport
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="text-right">
+                    <a class="nav-item btn btn-outline-info" href="#">Connexion</a>
+                    <a class="nav-item btn btn-outline-warning mx-2" href="#">Inscription</a>
+                </div> <!-- ./text-right -->
+
+            </div> <!-- ./collapse -->
+        </div> <!-- ./container-fluid -->
+    </nav> <!-- /nav -->
+</header>
